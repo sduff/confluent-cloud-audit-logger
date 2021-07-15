@@ -1,0 +1,13 @@
+---
+version: '2'
+services:
+  auditlogger:
+    image: confluent-cloud-audit-logger:1.0.0
+    hostname: ccaudit
+    container_name: ccaudit
+    environment:
+        SASL_USERNAME: 
+        SASL_PASSWORD: 
+        BOOTSTRAP_SERVERS: 
+    volumes:
+      - ./logs:/logs/
